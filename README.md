@@ -44,10 +44,15 @@ Restaurant Finder is a backend Spring Boot RESTful application that provides set
    8. Terminate Session (/terminateSession)
    9. Show selected restaurant (/getSelectedRestaurant)
 
-4. Technologies Used
+4. Junit Test cases written for controller and service layer (src/main/test)
+   1. RestaurantControllerTest
+   2. RestaurantServiceImplTest
+
+5. Technologies Used
    1. Spring Boot
-   2. Spring Web Mbc
+   2. Spring Web
    3. H2 database
    4. Spring Data JPA
-   5. Junit
-   6. Mockito
+   5. Lombok (Enable Annotation processing)
+   6. Junit
+   7. Mockito
