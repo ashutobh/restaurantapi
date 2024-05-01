@@ -2,6 +2,8 @@
 
 Restaurant Finder is a backend Spring Boot RESTful application that provides set of APIs to frontend application so that groups of people to create and join sessions to share their restaurant preferences. At the end of the session, one restaurant is randomly selected from the choices provided by the participants.
 
+## Open API Swagger Specification
+http://localhost:8080/swagger-ui/index.html
 ## Below are the APIs provided
 - **/showAllUsers**: 
   - Users can show all the Users added to the system.
