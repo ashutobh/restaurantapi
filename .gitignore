@@ -2,8 +2,11 @@
 .classpath
 .project
 .settings/
-.idea
+.mvn/
 target/
+.idea
+
+
 
 # OS generated files
 ######################
