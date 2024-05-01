@@ -29,7 +29,6 @@ public class RestaurantServiceImpl implements RestaurantService {
     private final SessionRepository sessionRepository;
     private final SessionUserRepository sessionUserRepository;
     private final UserRepository userRepository;
-
     private static final Random RANDOM = new Random();
 
     @Override
@@ -107,6 +106,7 @@ public class RestaurantServiceImpl implements RestaurantService {
             } else {
                 responseBuilder
                         .statusCode(HttpStatus.BAD_REQUEST.value())
+                        .sessionId(sessionList.get(0).getSessionId())
                         .message("One Active session is already present. Please invalidate the active session if you want to create new session")
                         .build();
             }
@@ -262,11 +262,9 @@ public class RestaurantServiceImpl implements RestaurantService {
                 } else {
                     restaurantBuilder.restaurantStatus("SELECTED");
                 }
-                restaurantRepository.findById(session.getSelectedRestaurantId()).ifPresent(restaurant -> {
-                    restaurantBuilder
-                            .restaurantName(restaurant.getRestaurantName())
-                            .restaurantAddedBy(restaurant.getAddedBy());
-                });
+                restaurantRepository.findById(session.getSelectedRestaurantId()).ifPresent(restaurant -> restaurantBuilder
+                        .restaurantName(restaurant.getRestaurantName())
+                        .restaurantAddedBy(restaurant.getAddedBy()));
                 restaurantBuilder
                         .message(RestaurantConstant.SUCCESS)
                         .statusCode(HttpStatus.OK.value());

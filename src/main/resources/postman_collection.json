@@ -1,0 +1,660 @@
+{
+	"info": {
+		"_postman_id": "1df0f5a8-327c-45e1-b687-b50964ba6c2f",
+		"name": "Restaurant-Finder API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9612816"
+	},
+	"item": [
+		{
+			"name": "addUser1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailAddress\": \"ashutosh.bhardwaj@gmail.com\",\n    \"userFirstName\": \"Ashutosh\",\n    \"userLastName\": \"Bhardwaj\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailAddress\": \"adbhut.bhardwaj@gmail.com\",\n    \"userFirstName\": \"Adbhut\",\n    \"userLastName\": \"Bhardwaj\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailAddress\": \"soni.sharma@gmail.com\",\n    \"userFirstName\": \"Anshul\",\n    \"userLastName\": \"Sharma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailAddress\": \"dinesh.chandra@gmail.com\",\n    \"userFirstName\": \"Dinesh Chandra\",\n    \"userLastName\": \"Sharma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userEmailAddress\": \"suman.lata@gmail.com\",\n    \"userFirstName\": \"Suman Lata\",\n    \"userLastName\": \"Sharma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/showAllUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"showAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createSession",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/createSession/ashutosh.bhardwaj@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"createSession",
+						"ashutosh.bhardwaj@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joinSession-User1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/joinSession/1/ashutosh.bhardwaj@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"joinSession",
+						"1",
+						"ashutosh.bhardwaj@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joinSession-User2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/joinSession/1/adbhut.bhardwaj@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"joinSession",
+						"1",
+						"adbhut.bhardwaj@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joinSession-User3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/joinSession/1/soni.sharma@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"joinSession",
+						"1",
+						"soni.sharma@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joinSession-User4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/joinSession/1/dinesh.chandra@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"joinSession",
+						"1",
+						"dinesh.chandra@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "joinSession-User5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/joinSession/1/suman.lata@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"joinSession",
+						"1",
+						"suman.lata@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showAllSessionUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/showAllSessionUsers/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"showAllSessionUsers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSession",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/getActiveSession",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"getActiveSession"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRestaurant1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"restaurantName\": \"Banana Leaf\",\n    \"restaurantAddress\": \"Sengkang\",\n    \"restaurantAddedByEmail\": \"ashutosh.bhardwaj@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addRestaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRestaurant2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"restaurantName\": \"Komala Vilas\",\n    \"restaurantAddress\": \"Little India\",\n    \"restaurantAddedByEmail\": \"adbhut.bhardwaj@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addRestaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRestaurant3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"restaurantName\": \"Murugan Idly\",\n    \"restaurantAddress\": \"Ferrar Park\",\n    \"restaurantAddedByEmail\": \"soni.sharma@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addRestaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRestaurant4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"restaurantName\": \"Kailash Parbat\",\n    \"restaurantAddress\": \"Little India\",\n    \"restaurantAddedByEmail\": \"dinesh.chandra@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addRestaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addRestaurant5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"restaurantName\": \"Nandana\",\n    \"restaurantAddress\": \"Tai Seng\",\n    \"restaurantAddedByEmail\": \"suman.lata@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/addRestaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"addRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSelectedRestaurant",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/getSelectedRestaurant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"getSelectedRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "terminateSession",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/terminateSession/1/ashutosh.bhardwaj@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"terminateSession",
+						"1",
+						"ashutosh.bhardwaj@gmail.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
