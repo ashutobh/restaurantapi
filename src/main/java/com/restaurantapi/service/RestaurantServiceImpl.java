@@ -14,13 +14,17 @@ import com.restaurantapi.request.RestaurantRequest;
 import com.restaurantapi.request.UserRequest;
 import com.restaurantapi.response.*;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
 
+@Slf4j
 @Service
 @AllArgsConstructor
 public class RestaurantServiceImpl implements RestaurantService {
@@ -333,5 +337,25 @@ public class RestaurantServiceImpl implements RestaurantService {
                 .message("No Session Found!")
                 .build());
         return restaurantBuilder.build();
+    }
+
+    @Override
+    public Response resetToDefault() {
+        try {
+            var dbBuilder = new EmbeddedDatabaseBuilder();
+             dbBuilder.setType(EmbeddedDatabaseType.H2)
+                    .addScripts("classpath:schema.sql")
+                    .build();
+             return Response.builder()
+                     .statusCode(HttpStatus.OK.value())
+                     .message(RestaurantConstant.SUCCESS)
+                     .build();
+        } catch (Exception e) {
+            log.error("Embedded DataSource bean cannot be created!", e);
+            return Response.builder()
+                    .statusCode(HttpStatus.INTERNAL_SERVER_ERROR.value())
+                    .message("Failed")
+                    .build();
+        }
     }
 }

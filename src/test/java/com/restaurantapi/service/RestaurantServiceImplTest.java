@@ -335,4 +335,11 @@ class RestaurantServiceImplTest {
         Assertions.assertEquals(HttpStatus.OK.value(), users.getStatusCode());
     }
 
+    @Test
+    void resetToDefaultWhenSuccessTest() {
+        var response = restaurantServiceImpl.resetToDefault();
+        Assertions.assertEquals("Success", response.getMessage());
+        Assertions.assertEquals(HttpStatus.OK.value(), response.getStatusCode());
+    }
+
 }

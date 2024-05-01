@@ -655,6 +655,39 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "resetToDefault",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/restaurant/api/v1/resetToDefault",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"resetToDefault"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

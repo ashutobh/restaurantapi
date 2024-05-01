@@ -26,7 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@TestPropertySource(properties = { "spring.config.location=classpath:application-test.yml" })
+@TestPropertySource(properties = {"spring.config.location=classpath:application-test.yml"})
 class RestaurantControllerTest {
 
     @Autowired
@@ -176,6 +176,18 @@ class RestaurantControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.restaurantName").isNotEmpty())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.restaurantAddedBy").isNotEmpty());
+    }
+
+    @Test
+    void resetToDefaultTest() throws Exception {
+        Mockito.when(restaurantService.resetToDefault()).thenReturn(Response.builder().message("Success").statusCode(HttpStatus.OK.value()).build());
+        mvc.perform(MockMvcRequestBuilders
+                        .get("/restaurant/api/v1/resetToDefault")
+                        .accept(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.message").isNotEmpty())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.statusCode").isNotEmpty());
     }
 
 }

@@ -70,5 +70,11 @@ public class RestaurantController {
     public ResponseEntity<RestaurantResponse> terminateSession(@PathVariable(value = "sessionId") Long sessionId, @PathVariable(value = "userId") String userEmailAddress) {
         return ResponseEntity.ok(restaurantService.terminateSession(sessionId, userEmailAddress));
     }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping(value = "/resetToDefault", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Response> resetToDefault() {
+        return ResponseEntity.ok(restaurantService.resetToDefault());
+    }
 }
 

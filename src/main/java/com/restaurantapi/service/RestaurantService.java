@@ -23,6 +23,5 @@ public interface RestaurantService {
     RestaurantResponse getSelectedRestaurant();
 
     RestaurantResponse terminateSession(Long sessionId, String userEmailAddress);
-
-
+    Response resetToDefault();
 }
